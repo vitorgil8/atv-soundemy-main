@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*============================================================================
+                                GERAL
+==============================================================================*/
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: #888888;
+}
+/*============================================================================
+                                TOPO
+==============================================================================*/
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    margin: 0 0 0 2vw ;
+}
+a.sing-up{
+    color: white;
+    background: #0E8388;
+    border-radius: 10px;
+    padding: 8px 14px 8px 14px;
+}
+header{
+    margin: 1vw 8vw 1vw 8vw;
+
+}
+/*============================================================================
+                                SECTION-BANNER
+==============================================================================*/                                    
+section.banner {
+    text-align: center;
+    margin: 3vw 8vw 3vw 8vw;
+}
+section.banner h2{
+    margin: 1vw 0 1vw 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+section.banner p{
+    font-size: 2rem;
+    margin: 0 0 2vw 0;
+}
+section.banner a{
+    color: white;
+    background: #0E8388;
+    border-radius: 10px;
+    padding: 8px 40px 8px 40px;
+}
+section.banner img{
+    width: 80%;
+    max-width: 800px;
+}
+/*============================================================================
+                                SECTION-PRODUCTS
+==============================================================================*/ 
+section.products {
+    text-align: center;
+    padding: 3vw 8vw 3vw 8vw;
+    background: linear-gradient(#CBE4DE, #839691) ;
+}
+section.products h2{
+    padding: 2vw 0 2vw 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+section.products p{
+    font-size: 2rem;
+    margin: 0 0 2vw 0 ;
+    padding: 0 4vw 0 4vw;
+}
+section.products ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section.products ul li {
+    width: 30%;
+    background: white;
+    padding: 1vw;
+    margin: 0 0 4vw 0;
+    border-radius: 10px;
+}
+section.products ul li h3{
+    font-size: 2.3rem;
+    margin: 1vw 0 1vw 0;
+}
+section.products ul li i{
+    font-size: 3rem;
+}
+/*============================================================================
+                                SECTION-BUILD
+==============================================================================*/ 
+section.build{
+    text-align: center;
+    margin: 6vw 8vw 2vw 8vw;
+}
+section.build h2{
+    font-size: 3rem;
+    font-weight: bold
+}
+section.build p{
+    font-size: 2rem;
+    margin: 2vw 0 2vw 0;
+}
+section.build > div{
+    display: flex;
+    justify-content: center;
+}
+section.build div{
+    align-items: center;
+    margin: 0 0 0 4vw;
+}
+section.build div h3{
+    font-size: 2.3rem;
+}
+section.build div img{
+    width: 30vw;
+}
+/*============================================================================
+                                FOOTER
+==============================================================================*/ 
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw 0 0 0;
+    padding: 2vw 8vw 1vw 8vw;
+    align-items: center;
+    background: #CBE4DE;
+}
+footer h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    margin: 0 0 0 2vw;
+}
+footer ul li a{
+    color: #839691;
+}
+@media (max-width: 600px) {
+    header nav{
+        display: block;
+        text-align: center;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    header nav ul li{
+        width: 40%;
+        margin: 4vw;
+    }
+    header nav h1{
+        margin: 3vw;
+    }
+    section.banner{
+        padding: 0 0 4vw 0;
+    }
+    section.banner h2{
+        font-size: 2.5rem;
+    }
+    section.banner p{
+        font-size: 1.5rem;
+        margin: 4vw 0 4vw 0;
+    }
+    section.products h2{
+        font-size: 2rem;
+    }
+    section.products p{
+        font-size: 1.5rem;
+    }
+    section.products ul{
+        flex-wrap: wrap;
+    }
+    section.products ul li{
+        width: 100%;
+        margin: 2vw 0 2vw 0;
+        padding: 5vw;
+    }
+    section.build h2{
+        font-size: 2rem;
+    }
+    section.build p{
+        font-size: 1.5rem;
+    }
+    section.build > div{
+        flex-wrap: wrap;
+    }
+    section.build > div img{
+        width: 100%;
+        margin: 0 0 4vw 0;
+    }
+    footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    footer h1{
+        width: 100%;
+        margin: 2vw 0 2vw 0;
+    }
+    footer ul{
+        text-align: center;
+        margin: 2vw 0 2vw 0;
+    }
+}
